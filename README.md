@@ -1,6 +1,5 @@
 # Categorizing Customer Reviews
 
-# Predicting Used Car Price
 <p align="center">
   <img src="images/movie_clipart.png"
   width="400"
@@ -39,7 +38,7 @@
 <b>Features</b>
 * *review* - the review text
 * *start_year* - year or release
-* *title_type8 - type of movie
+* *title_type* - type of movie
 * *ds_part* - 'train'/'test' for the train/test part of the dataset, correspondingly
 
 <b>Targets</b>
@@ -59,15 +58,11 @@ Variables missing data were all missing less than 15% of observations. Categoric
   ├── README.md          
   │
   ├── images
-  │   └── correlation_matrix.png
+  │   └── movie_clipart.png
   │   └── important_features.png 
-  │   └── pairplot.png 
-  │   └── test_results.png 
-  │   └── train_results.png 
-  │   └── used_car_clipart.png     
   │
   └── notebooks  
-      └── car_price_analysis.ipynb  
+      └── nlp_review_analysis.ipynb  
 ```
 
 # Results and Evaluation
@@ -121,19 +116,24 @@ LightGBM GBDT achieved a lower RMSE and higher R^2 on the test set (RMSE = 1663.
   alt="Important features plo">
 </p>
 
-Power and registration_year are the most important features for predicting price. These are followed by postal code, mileage, registration month, and model type. The least important features are vehicle type, brand, and fuel type.
+The Film Junky Union wanted to build a model to classify movie reviews as positive or negative. Four models were trained and each did fairly well on the training set. Models are summarized as follows:  
+
+1. NLTK, TF-IDF, and Logistic Regression (F1 = 0.88)
+2. SpaCy, TF-IDF, and Logistic Regression (F1 = 0.87)  
+3. SpaCy, TF-IDF, and LightGBM (F1 = 0.87)
+4. BERT, Logistic Regression (F1 = 0.85)
 
 # Conclusions and Business Application
 
 ## Conclusions
 
-LightGBM GBDT achieved the best model fit (RMSE test = 1663.83). Predictions from this model will offer customers the predicted value of their car within $1,663.83 on average. The most important features were predicting price were power, registration year, postal code, and mileage.  
+The best model was the Logistic Regression trained with NLTK lemmatization and TF-IDF text vectorization. BERT would likely perform better, with more time to tune on a larger training set. 
 
 ## Business Application 
 
-Rusty Bargain will be able to implement this model in their app and be confident that customers will receive accurate predictions in about 1 second. 
+The Film Junky Union can feel confident putting this model into use, knowing it will correctly predict about 90% of movie reviews as positive or negative in tone.
 
 ## Future Research 
 
-With additional time, more hyperparameters and trees/iterations could be performed to improve model accuracy. Additionally, further data cleaning may improve the accuracy of the results.
+With additional time, BERT could be further fine tuned on additional data. Additionally, more tuning parameters could be tested on gradient boosting models.
 
