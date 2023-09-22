@@ -102,7 +102,7 @@ LightGBM achieved the lowest RMSE (RMSE = 1739.38) and highest R^2 value (R^2 = 
 
 <p align="left">
   <img src="/images/review_probs.png"
-  width="500"
+  width="550"
   height="200"
   alt="Test results">
 </p>
