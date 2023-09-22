@@ -90,8 +90,8 @@ Price has a moderate, positive correlation with registration year (r = 0.37) and
 ## Train Results
 
 <p align="left">
-  <img src="/images/train_results.png"
-  width="450"
+  <img src="/images/best_results.png"
+  width="650"
   height="250"
   alt="Train results">
 </p>
@@ -101,19 +101,10 @@ LightGBM achieved the lowest RMSE (RMSE = 1739.38) and highest R^2 value (R^2 = 
 ## Test Results
 
 <p align="left">
-  <img src="/images/test_results.png"
-  width="250"
-  height="100"
+  <img src="/images/review_probs.png"
+  width="650"
+  height="400"
   alt="Test results">
-</p>
-
-LightGBM GBDT achieved a lower RMSE and higher R^2 on the test set (RMSE = 1663.85, R^2 = 0.86). The model is likely not overfit. It was able to make predictions in less than one second.
-
-<p align="left">
-  <img src="/images/important_features.png"
-  width="550"
-  height="350"
-  alt="Important features plo">
 </p>
 
 Four models were trained and each did fairly well classifying the training set. Models are summarized as follows:  
