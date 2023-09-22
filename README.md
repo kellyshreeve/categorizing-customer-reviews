@@ -80,7 +80,7 @@ There are no clear associations between the dependent variable price and registr
 
 <p align="left">
   <img src="/images/train_test_split.png" 
-  width="500"
+  width="450"
   height="300"
   alt="Correlation heatmap">
 </p>
@@ -103,7 +103,7 @@ LightGBM achieved the lowest RMSE (RMSE = 1739.38) and highest R^2 value (R^2 = 
 <p align="left">
   <img src="/images/review_probs.png"
   width="750"
-  height="400"
+  height="300"
   alt="Test results">
 </p>
 
