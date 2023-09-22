@@ -76,7 +76,7 @@ Variables missing data were all missing less than 15% of observations. Categoric
   alt="sns pair plot of numeric variables">
 </p>
 
-There are no clear associations between the dependent variable price and registriation_year, power, mileage, or registration_month. There is also a possible violation of linearity between price and power.
+The number of movies per year generally increases over time until 2006, when we see a sharp decline in number of movies produced per year. There are generally similar numbers of positive and negative reviews per year.
 
 <p align="left">
   <img src="/images/train_test_split.png" 
@@ -85,7 +85,7 @@ There are no clear associations between the dependent variable price and registr
   alt="Correlation heatmap">
 </p>
 
-Price has a moderate, positive correlation with registration year (r = 0.37) and power (r = 0.40). Price has a moderate, negative correlation with mileage(r = -0.33). Price is only weakly related to registration month (r = 0.11). The features registration year, power, and mileage are very weakly correlated with each other. Multicollinearity is not an issue.
+There are similar numbers of positive and negative reviews in the training and test sets. Additionally, the classes are mostly balanced in both the training and test sets.
 
 ## Train Results
 
@@ -96,9 +96,11 @@ Price has a moderate, positive correlation with registration year (r = 0.37) and
   alt="Train results">
 </p>
 
-LightGBM achieved the lowest RMSE (RMSE = 1739.38) and highest R^2 value (R^2 = 0.85).  LightGBM took the longest to tune, but this was due to the large number of hyperparameters entered into the grid. LightGBM was able to tune more hyperparameters options than Random Forest and CatBoost in a similar amount of time. Both standard and ridge regression had very quick computations, but they were over $1000 less accurate in their predictions than  LightGBM GBDT. Considering both model score and time, LightGBM GBDT is the best model.
+Logistic regression with text vectorized with NLTK TF-IDF was able to achieve a maximum F1 score of 0.88 at a threshold of 0.45 on the test set. It had a validation ROC AUC of 0.95 and a validation PRC of 0.95. This model is good at classifying reviews based on media type, year, runtime, and review text.
 
 ## Test Results
+
+Predicted probabilty of positive review using the NLTK TF-IDF logistic regression:
 
 <p align="left">
   <img src="/images/review_probs.png"
