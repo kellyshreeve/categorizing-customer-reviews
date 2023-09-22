@@ -70,18 +70,18 @@ Variables missing data were all missing less than 15% of observations. Categoric
 ## Exploratory Analysis
  
 <p align="left">
-  <img src="/images/pairplot.png"
-  width="500"
-  height="500"
+  <img src="/images/polarity_time.png"
+  width="650"
+  height="250"
   alt="sns pair plot of numeric variables">
 </p>
 
 There are no clear associations between the dependent variable price and registriation_year, power, mileage, or registration_month. There is also a possible violation of linearity between price and power.
 
 <p align="left">
-  <img src="/images/correlation_matrix.png" 
-  width="650"
-  height="250"
+  <img src="/images/train_test_split.png" 
+  width="400"
+  height="400"
   alt="Correlation heatmap">
 </p>
 
@@ -116,7 +116,7 @@ LightGBM GBDT achieved a lower RMSE and higher R^2 on the test set (RMSE = 1663.
   alt="Important features plo">
 </p>
 
-The Film Junky Union wanted to build a model to classify movie reviews as positive or negative. Four models were trained and each did fairly well on the training set. Models are summarized as follows:  
+Four models were trained and each did fairly well classifying the training set. Models are summarized as follows:  
 
 1. NLTK, TF-IDF, and Logistic Regression (F1 = 0.88)
 2. SpaCy, TF-IDF, and Logistic Regression (F1 = 0.87)  
