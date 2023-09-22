@@ -71,7 +71,7 @@ Variables missing data were all missing less than 15% of observations. Categoric
  
 <p align="left">
   <img src="/images/polarity_time.png"
-  width="650"
+  width="800"
   height="250"
   alt="sns pair plot of numeric variables">
 </p>
@@ -80,8 +80,8 @@ There are no clear associations between the dependent variable price and registr
 
 <p align="left">
   <img src="/images/train_test_split.png" 
-  width="400"
-  height="400"
+  width="500"
+  height="300"
   alt="Correlation heatmap">
 </p>
 
@@ -91,8 +91,8 @@ Price has a moderate, positive correlation with registration year (r = 0.37) and
 
 <p align="left">
   <img src="/images/best_results.png"
-  width="650"
-  height="250"
+  width="750"
+  height="350"
   alt="Train results">
 </p>
 
@@ -102,7 +102,7 @@ LightGBM achieved the lowest RMSE (RMSE = 1739.38) and highest R^2 value (R^2 = 
 
 <p align="left">
   <img src="/images/review_probs.png"
-  width="650"
+  width="750"
   height="400"
   alt="Test results">
 </p>
