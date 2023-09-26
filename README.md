@@ -1,4 +1,4 @@
-# Categorizing Customer Reviews
+# Classifying Movie Reviews
 
 <p align="center">
   <img src="images/movie_clipart.png"
