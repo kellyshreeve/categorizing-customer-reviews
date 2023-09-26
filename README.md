@@ -8,9 +8,9 @@
 </p>
 
 # Project Overview
-The Film Junky Union, a new edgy community for classic movie enthusiasts, is developing a system for filtering and categorizing movie reviews. 
+**Background:** A NLP project that trains a model to correctly classify reviews from a dataset of IMBD movie reviews with polarity labelling.
 
-The goal is to train a model to automatically detect negative reviews from a dataset of IMBD movie reviews with polarity labelling. The model classifies positive and negative reviews. Achieve an F1 score of at least 0.85.
+**Purpose:** Train a model to automatically detect reviews as positive or negative polarity. Achieve an F1 score of at least 0.85.
 
 **Techiniques:** Tokenization, Lemmatization, BERT, gradient boosting.
 
