@@ -7,14 +7,24 @@
   alt="Movie reel clip art">
 </p>
 
-# Project Overview
+### Table of Contents
+
+1. [Project Overview](#overview)  
+2. [Installation and Setup](#setup)  
+3. [Data](#data)  
+4. [Code Structure](#structure)  
+5. [Results and Evaluation](#results)  
+6. [Conclusions and Business Recommendations](#conclusions)
+7. [View Project Code](https://github.com/kellyshreeve/predicting-telecom-customer-churn/blob/main/Notebooks/project-code.ipynb)
+
+# Project Overview<a id='overview'></a>
 **Background:** A NLP project that trains a model to correctly classify reviews from a dataset of IMBD movie reviews with polarity labelling.
 
 **Purpose:** Train a model to automatically detect reviews as positive or negative polarity. Achieve an F1 score of at least 0.85.
 
 **Techiniques:** Tokenization, Lemmatization, BERT, gradient boosting.
 
-# Installation and Setup
+# Installation and Setup<a id='setup'></a>
 
 ## Codes and Resources Used
 
@@ -29,9 +39,9 @@
   - <b>Machine Learning</b>: ```sklearn, LightGBM```  
   - <b>Natural Language Processing</b>: ```NLTK, spaCy, torch, transformers```
 
-# Data
+# Data<a id='data'></a>
 
-## Source Data
+## Data Sets
 
 *imdb_reviews.csv*
 
@@ -52,7 +62,7 @@ The data were provided by TripleTen's Data Science bootcamp. The full dataset is
 
 Variables missing data were all missing less than 15% of observations. Categorical missing values were filled with 'unknown' and quantitative missing values were imputed with medians. Duplicates were cleaned from the dataset.
 
-# Code Structure
+# Code Structure<a id='structure'></a>
 ```
   ├── LICENSE
   ├── README.md          
@@ -65,7 +75,7 @@ Variables missing data were all missing less than 15% of observations. Categoric
       └── nlp_review_analysis.ipynb  
 ```
 
-# Results and Evaluation
+# Results and Evaluation<a id='results'></a>
 
 ## Exploratory Analysis
  
@@ -116,7 +126,7 @@ Four models were trained and each did fairly well classifying the training set. 
 3. SpaCy, TF-IDF, and LightGBM (F1 = 0.87)
 4. BERT, Logistic Regression (F1 = 0.85)
 
-# Conclusions and Business Application
+# Conclusions and Business Application<a id='conclusions'></a>
 
 ## Conclusions
 
@@ -126,6 +136,7 @@ The best model was the Logistic Regression trained with NLTK lemmatization and T
 
 The Film Junky Union can feel confident putting this model into use, knowing it will correctly predict about 90% of movie reviews as positive or negative in tone.
 
+[View Project Code](https://github.com/kellyshreeve/classifying-movie-reviews/blob/main/notebooks/nlp_review_analysis.ipynb)
 ## Future Research 
 
 With additional time, BERT could be further fine tuned on additional data. Additionally, more tuning parameters could be tested on gradient boosting models.
