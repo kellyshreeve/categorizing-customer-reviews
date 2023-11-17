@@ -15,7 +15,7 @@
 4. [Code Structure](#structure)  
 5. [Results and Evaluation](#results)  
 6. [Conclusions and Business Recommendations](#conclusions)
-7. [View Project Code](https://github.com/kellyshreeve/predicting-telecom-customer-churn/blob/main/Notebooks/project-code.ipynb)
+7. [View Project Code](https://github.com/kellyshreeve/classifying-movie-reviews/blob/main/notebooks/nlp_review_analysis.ipynb)
 
 ## Project Overview<a id='overview'></a>
 **Background:** A NLP project that trains a model to correctly classify reviews from a dataset of IMBD movie reviews with polarity labelling.
